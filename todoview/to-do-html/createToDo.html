@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../to-do-css/createToDo.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box">
+            
+            <div class="topBox">
+                <div class="iconezi">
+                    <div class="iconDiv" onclick="bar()"><i class="fa fa-bars"></i></div>
+                    <div class="classText"><p>Create To Do</p></div>
+                </div>
+                <div class="listDiv">
+                    <ul class="list">
+                        <li><a href="../to-do-html/dashboard.html">Home</a></li>
+                        <li><a href="">Create to do</a></li>
+                        <li><a href="../to-do-html/login.html">logout</a></li>
+                    </ul> 
+                </div>
+     
+            </div>
+            
+            <div class="bottomBox">
+                <div class="details">
+                    <select onchange="select(value)" name="" id="" class="dropDown">
+                        <option  value="business">Business</option>
+                        <option  value="entertainment">Entertainment</option>
+                        <option  value="school">School</option>
+                        <option  value="travel">Travel</option>
+                        <option  value="other">Other</option>
+                    </select>
+                </div>
+                <div class="details titles">
+                    <input class="title" type="text" placeholder="Enter your title">
+                    <i onclick="clear1()" class="fa fa-times-circle"></i>
+                </div>
+                <div class="details">
+                    <input class="summary" type="text" placeholder="To do Summary">
+                    <i onclick="clear2()" class="fa fa-times-circle"></i>
+                </div>
+                <div class="details">
+                    <input class="date" type="date">
+                </div>
+                <div class="details">
+                    <input class="time" type="time">
+                </div>
+                <button onclick="add()" class="addBTN">ADD YOUR THING</button>
+            </div>
+        </div>
+    </div>
+    <script src="../to-do-js/createToDo.js"></script>
+</body>
+</html>

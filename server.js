@@ -4,11 +4,11 @@ var port = process.env.PORT||3050
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, 'display')))
+app.use(express.static(path.join(__dirname, 'todoview')))
 
 app.get('/', (req,res) => {
-    // res.sendFile(path.join(__dirname,'display','index.html'))
-    res.send("okay")
+    res.sendFile(path.join(__dirname,'todoview', 'to-do-html','login.html'))
+    //res.send("okay")
 })
 
 app.listen(port, ()=> {

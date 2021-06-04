@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../to-do-asset/blue.jpeg);
+    opacity: .9;
+    background-color: lightskyblue;
+    /* z-index: -1; */
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin: 100px auto;
+}
+.topBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background-color: #46529C;
+    margin-bottom: 20px;
+    position: relative;
+}
+.iconDiv{
+    color: white;
+}
+.classText{
+    position: absolute;
+    color: white;
+    right: 45%;
+    text-align: center;
+}
+.iconezi{
+    display: flex;
+    flex-direction: row;
+}
+.listDiv{
+    display: none;
+}
+.list{
+    list-style: none;
+    margin-top: 20px;   
+}
+.list>li>a{
+    color: white;
+    text-decoration: none;
+}
+.bottomBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background-color: #46529C;
+    
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.dropDown,.title,.summary,.time,.date{
+    width: 100%;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+}
+.titles{
+    display: none;
+    align-items: center;
+    flex-direction: row;
+}
+.fa-times-circle{
+    color: white;
+}
+.date::-webkit-calender-picker-indicator{
+    background-color: white;
+}
+.addBTN{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #2FBAEF;
+    margin: 20px 0px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}

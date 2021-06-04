@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to right bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .8) ), url("../to-do-asset/blue.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+}
+.align{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 230px;
+}
+.welcome{
+    font-size: 75px;
+    display: block;
+    color: white;
+}
+.schedule{
+    font-size: 20px;
+    display: block;
+    color: white;
+}
+.email{
+    display: block;
+    width: 80%;
+    /* padding: 15px 0px; */
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    background:none;
+    height: 50px;
+}
+.password{
+    display: block;
+    width: 80%;
+    /* padding: 15px 0px; */
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border:1px solid white;
+    background: none;
+    height: 50px;
+}
+.forgotPasswordDiv{
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 450px;
+    width: 40%;
+    /* background-color: blue; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cancel{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+.cancelIcon{
+    color: white;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.myEmailBox, .myPasswordBox,.myConfirmBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 50px;
+    width: 80%;
+    margin: 20px 0px;
+}
+.myEmail,.newPassword,.confirmPassword{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    outline: none;
+    background: none;
+    border: none;
+}
+.fa-times-circle-o{
+    color: white;
+    font-size: xx-large;
+    margin-right: 10px;
+}
+.submit{
+    display: block;
+    width: 80%;
+    padding: 15px 0px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #46529C;
+    color: white;
+    outline: none;
+    border: none;
+}
+::placeholder{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.login{
+    display: block;
+    width: 80%;
+    padding: 15px 0px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #46529C;
+    color: white;
+    outline: none;
+    border: none;
+}
+.register{
+    display: none;
+    width: 80%;
+    padding: 15px 0px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #46529C;
+    color: white;
+    outline: none;
+    border: none;
+}
+.switch{
+    font-family: initial;
+}
+.split{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.passwordDiv{
+    border-right: 1px solid white;
+    padding: 0px 10px;
+    color: white;
+}
+.registerDiv{
+    padding: 0px 10px;
+    color: white;
+    cursor: pointer;
+}

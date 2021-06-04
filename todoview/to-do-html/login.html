@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoLogin</title>
+    <link rel="stylesheet" href="../to-do-css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="align">
+            <p class="welcome">Welcome</p>
+            <p class="schedule">schedule your time easily</p>
+            <input class="email" type="email" placeholder="Email Address">
+            <input class="password" type="password" placeholder="Password">
+            <button class="login" onclick="login()">Login</button>
+            <button class="register" onclick="register() ">Register</button>
+            <div class="split">
+                <div onclick="forgotPassword()" class="passwordDiv"><p>Forgot Password?</p></div>
+                <div onclick="registerDiv()" class="registerDiv"><p class="switch">Register</p></div>
+            </div>
+        </div>
+        <div class="forgotPasswordDiv">
+            <div class="cancel"><i onclick="cancel()" class="fa fa-times-circle-o cancelIcon"></i></div>
+            <div class="myEmailBox">
+                <input class="myEmail" type="email" placeholder="Email Your Address">
+                <i onclick="clear1()" class="fa fa-times-circle-o"></i>
+            </div>
+            <div class="myPasswordBox">
+                <input class="newPassword" type="password" placeholder="Enter New Password">
+                <i class="fa fa-times-circle-o"></i>
+            </div>
+            <div class="myConfirmBox">
+                <input class="confirmPassword" type="password" placeholder="confirm Password">
+                <i class="fa fa-times-circle-o"></i>
+            </div>
+            <button class="submit" onclick="submitNewPassword() ">Submit</button>
+        </div>
+    </div>
+    <script src="../to-do-js/login.js"></script>
+</body>
+</html>

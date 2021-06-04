@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../to-do-css/dashboard.css">
+    <link rel="stylesheet" href="../to-do-css/edit.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="top">
+                <div class="iconDiv" onclick="bar()"><i class="fa fa-bars"></i></div>
+                <ul class="list">
+                    <li><a onclick="profile()" class="profile" href="">CHANGE PASSWORD</a></li>
+                    <li><a href="../to-do-html/createToDo.html">CREATE TO DO</a></li>
+                    <li><a onclick="clearTodos()" >Clear Todos</a></li>
+                    <li><a onclick="logout()" >Logout</a></li>
+                </ul>
+                <p>Your <br> Things</p>
+            </div>
+            <div class="bottomBox" >
+                <div style="display: static;" class="inbox">
+                    <p>INBOX</p>
+                </div>
+                <div class="bottom">
+                    <div class="toDoList">
+
+                    </div>                         
+                </div>
+                <div class="completedDiv">
+                    <p>COMPLETED</p>
+                    <div class="counterDiv"><p class="counter">3</p></div>
+                </div>
+            </div>
+            
+            <div onclick="toCreateToDo()" class="ballPlus">
+                <p>+</p>
+            </div>
+
+        </div>   
+    </div>
+    <div class="container2">
+        
+        <div class="box2">
+            
+            
+            <div class="bottomBox2">
+                <div class="cancel"><i onclick="cancel()" class="fa fa-times-circle-o cancelIcon"></i></div>
+                <div class="details">
+                    <select onchange="select(value)" name="" id="" class="dropDown">
+                        <option  value="business">Business</option>
+                        <option  value="entertainment">Entertainment</option>
+                        <option  value="school">School</option>
+                        <option  value="travel">Travel</option>
+                        <option  value="other">Other</option>
+                    </select>
+                </div>
+                <div class="details titles">
+                    <input class="title" type="text" placeholder="Enter your title">
+                    <i onclick="clear1()" class="fa fa-times-circle"></i>
+                </div>
+                <div class="details">
+                    <input class="summary" type="text" placeholder="To do Summary">
+                    <i onclick="clear2()" class="fa fa-times-circle"></i>
+                </div>
+                <div class="details">
+                    <input class="date" type="date">
+                </div>
+                <div class="details">
+                    <input class="time" type="time">
+                </div>
+                <button onclick="todoUpdate()" class="addBTN">Update</button>
+            </div>
+        </div>
+    </div>
+    <script src="../to-do-js/dashboard.js"></script>
+</body>
+
+</html>
