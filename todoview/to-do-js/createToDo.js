@@ -53,13 +53,13 @@ function saveToDo() {
         time: time,
         // id: 1,
     }
-    alert("checking")
+    //alert("checking")
     let fromDatabase = JSON.parse(localStorage.getItem("toDoDatabase"))
 
     if (!fromDatabase) {
         myToDo.id = 1;
         localStorage.setItem("toDoDatabase", JSON.stringify([myToDo]))
-        alert("if")
+        //alert("if")
     }
     else {
         var len = fromDatabase.length
@@ -69,11 +69,11 @@ function saveToDo() {
         // alert("else")
 
     }
-    // alert("To Do Successfully Saved")
+    alert("To Do Successfully Saved")
 }
 
 function add() {
     saveToDo()
-    alert("Your To-Do has been updated")
+    //alert("Your To-Do has been updated")
     window.location.href ='../to-do-html/dashboard.html'
 }

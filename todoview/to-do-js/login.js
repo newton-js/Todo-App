@@ -1,4 +1,4 @@
-alert(localStorage.getItem("registration"))
+//alert(localStorage.getItem("registration"))
 function registerDiv(){
     if(document.querySelector(".login").style.display != "none"){
         document.querySelector(".login").style.display = "none"

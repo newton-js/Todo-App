@@ -10,12 +10,12 @@ function bar() {
     }
 }
 
-function profile(){
-    let nam = JSON.parse(localStorage.getItem("myName"))
-    alert(nam)
-    let prof = document.querySelector(".profile") 
-    prof.innerHTML =  `${nam}`
-}
+// function profile(){
+//     let nam = JSON.parse(localStorage.getItem("myName"))
+//     alert(nam)
+//     let prof = document.querySelector(".profile") 
+//     prof.innerHTML =  `${nam}`
+// }
 //profile()
 function logout() {
     let ask = confirm("do you wanna logout?")
@@ -32,6 +32,7 @@ function clearTodos(){
     let ask = confirm("are you sure you want to clear all to-do?")
     if (ask) {
         localStorage.removeItem("toDoDatabase")
+        window.location.href ="../to-do-html/dashboard.html"
     }
 }
 
@@ -82,6 +83,7 @@ function dell(todoId) {
         console.log(remainingTodos)
 
         localStorage.setItem('toDoDatabase', JSON.stringify(remainingTodos));
+        window.location.href ="../to-do-html/dashboard.html"
     }
 
 }
@@ -153,7 +155,7 @@ function todoUpdate(){
         ace = aces.value
     }
     else {
-        ace = document.querySelector(".dropDown").value
+        ace = ace.value
     }
 
     for(let check of fromDatabase){
@@ -230,8 +232,3 @@ function todoUpdate(){
 
 
 
-let ball 
-if(ball){
-    console.log("yes")
-}else{
-console.log("no")}
